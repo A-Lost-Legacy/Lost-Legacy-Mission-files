@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<economycore>
+	<classes>
+<!--
+These are rootclasses to be used by economy.
+Do not forget to add attribute act="character", if root class represents character (player, infected, animal)
+Do not forget to add attribute act="car", if root class represents moveable vehicles
+-->
+		<rootclass name="DefaultWeapon" /> <!-- weapons -->
+		<rootclass name="DefaultMagazine" /> <!-- magazines -->
+		<rootclass name="Inventory_Base" /> <!-- inventory items -->
+		<rootclass name="HouseNoDestruct" reportMemoryLOD="no" /> <!-- houses, wrecks -->
+		<rootclass name="SurvivorBase" act="character" reportMemoryLOD="no" /> <!-- player characters -->
+		<rootclass name="DZ_LightAI" act="character" reportMemoryLOD="no" /> <!-- infected, animals -->
+		<rootclass name="CarScript" act="car" reportMemoryLOD="no" /> <!-- cars (sedan, hatchback, transitBus, V3S, ...) -->
+		<rootclass name="BoatScript" act="car" reportMemoryLOD="no" /> <!-- boats -->
+	</classes>
+	<defaults>
+		<default name="dyn_radius" value="30" />
+		<default name="dyn_smin" value="0" />
+		<default name="dyn_smax" value="0" />
+		<default name="dyn_dmin" value="1" />
+		<default name="dyn_dmax" value="5" />
+		<default name="log_ce_loop" value="false"/>
+		<default name="log_ce_dynamicevent" value="false"/>
+		<default name="log_ce_vehicle" value="false"/>
+		<default name="log_ce_lootspawn" value="false"/>
+		<default name="log_ce_lootcleanup" value="false"/>
+		<default name="log_ce_lootrespawn" value="false"/>
+		<default name="log_ce_statistics" value="false"/>
+		<default name="log_ce_zombie" value="false"/>
+		<default name="log_ce_animal" value="false"/>
+		<default name="log_storageinfo" value="false"/>
+		<default name="log_hivewarning" value="true"/>
+		<default name="log_missionfilewarning" value="true"/>
+		<default name="save_events_startup" value="true"/>
+		<default name="save_types_startup" value="true"/>
+	</defaults>
+	<ce folder="db/types/Vanilla">
+		<file name="ammo.xml" type="types" />
+		<file name="ammo_boxes.xml" type="types" />
+		<file name="animals.xml" type="types" />
+		<file name="armbands.xml" type="types" />
+		<file name="clothes.xml" type="types" />
+		<file name="containers.xml" type="types" />
+		<file name="contamination.xml" type="types" />
+		<file name="explosives.xml" type="types" />
+		<file name="flags.xml" type="types" />
+		<file name="food.xml" type="types" />
+		<file name="seasonal.xml" type="types" />
+		<file name="staticObjs.xml" type="types" />
+		<file name="tools.xml" type="types" />
+		<file name="uncategorized.xml" type="types" />
+		<file name="vehicleParts.xml" type="types" />
+		<file name="vehicles.xml" type="types" />
+		<file name="weapons.xml" type="types" />
+		<file name="wrecks.xml" type="types" />
+		<file name="zombies.xml" type="types" />
+	</ce>
+<!--Map-->
+	<!-- <ce folder="db/types/Banov">
+		<file name="Banov.xml" type="types" />
+	</ce> -->
+<!--Building-->
+	<ce folder="db/types/basebuilding/R22R">
+		<file name="Base_Building_Reloaded.xml" type="types" />
+	</ce>
+	<ce folder="db/types/basebuilding/bbp">
+		<file name="Base_Building_plus.xml" type="types" />
+	</ce>
+<!--Clothing-->
+	<ce folder="db/types/clothing/Fog">
+		<file name="Fog_Bags.xml" type="types" />
+		<file name="Fog_Belts.xml" type="types" />
+		<file name="Fog_Boots.xml" type="types" />
+		<file name="Fog_Ghillie_ReTex.xml" type="types" />
+		<file name="Fog_Gloves.xml" type="types" />
+		<file name="Fog_HeadGear.xml" type="types" />
+		<file name="Fog_Helmet_Accessories.xml" type="types" />
+		<file name="Fog_Helmets.xml" type="types" />
+		<file name="Fog_Holsters.xml" type="types" />
+		<file name="Fog_Masks.xml" type="types" />
+		<file name="Fog_Mag_Pouch.xml" type="types" />
+		<file name="Fog_Medical.xml" type="types" />
+		<file name="Fog_Misc.xml" type="types" />
+		<file name="Fog_NVG.xml" type="types" />
+		<file name="Fog_NVG_Attachments.xml" type="types" />
+		<file name="Fog_Pants.xml" type="types" />
+		<file name="Fog_Panels.xml" type="types" />
+		<file name="Fog_Patch.xml" type="types" />
+		<file name="Fog_Pouches.xml" type="types" />
+		<file name="Fog_Shirts_Civ.xml" type="types" />
+		<file name="Fog_Shirts_Mil.xml" type="types" />
+		<file name="Fog_Vest.xml" type="types" />
+	</ce>
+<!--Custom Mods-->
+	<ce folder="db/types/custom/Legacy_Storage">
+		<file name="Industrial.xml" type="types" />
+		<file name="Industrial_kits.xml" type="types" />
+		<file name="HandCrafted.xml" type="types" />
+		<file name="HandCrafted_kits.xml" type="types" />
+	</ce>
+	<ce folder="db/types/custom/Legacy_Gear">
+		<file name="Base_Building_plus.xml" type="types" />
+	</ce>
+<!--Medical-->
+	<ce folder="medical">
+	</ce>
+<!--Miscellaneous-->
+	<ce folder="miscellaneous">
+	</ce>
+<!--Vehicles-->
+	<ce folder="vehicles">
+		<file name="Rus_ATV.xml" type="types" />
+	</ce>
+<!--Weapons-->
+	<ce folder="db/types/weapons/Alpha">
+		<file name="A6_Weapons_Assault_Rifle.xml" type="types" />
+		<file name="A6_Weapons_LMG.xml" type="types" />
+		<file name="A6_Weapons_Pistol.xml" type="types" />
+		<file name="A6_Weapons_Rifle.xml" type="types" />
+		<file name="A6_Weapons_Shotgun.xml" type="types" />
+		<file name="A6_Weapons_SMG.xml" type="types" />
+		<file name="A6_Weapons_Sniper_Rifle.xml" type="types" />
+	</ce>
+	<ce folder="db/types/weapons/Ammo">
+		<file name="A6_Weapons_Ammo.xml" type="types" />
+	</ce>
+	<ce folder="db/types/weapons/Attachments">
+		<file name="A6_Weapons_Bayonet.xml" type="types" />
+		<file name="A6_Weapons_Buttstock.xml" type="types" />
+		<file name="A6_Weapons_Flashlight.xml" type="types" />
+		<file name="A6_Weapons_Muzzle.xml" type="types" />
+		<file name="A6_Weapons_OpticMount.xml" type="types" />
+		<file name="A6_Weapons_PistolGrip.xml" type="types" />
+	</ce>
+	<ce folder="db/types/weapons/Explosives">
+		<file name="MOE Explosives.xml" type="types" />
+	</ce>
+		<ce folder="db/types/weapons/Kits">
+		<file name="A6_Gunplay.xml" type="types" />
+	</ce>
+	<ce folder="db/types/weapons/Magazines">
+		<file name="A6_Weapons_Magazines.xml" type="types" />
+	</ce>
+	<ce folder="db/types/weapons/Optics">
+		<file name="A6_Optics.xml" type="types" />
+	</ce>
+</economycore>
